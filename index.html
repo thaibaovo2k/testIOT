@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div id="content" class="content">
+            <div class="header d-flex align-items-center justify-content-between">
+                <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path id="Path_2602" data-name="Path 2602" d="M0,0H24V24H0Z" fill="none"/>
+                    <path id="Path_2603" data-name="Path 2603" d="M4,18H20a1,1,0,0,0,0-2H4a1,1,0,0,0,0,2Zm0-5h8a1,1,0,0,0,0-2H4a1,1,0,0,0,0,2ZM3,7A1,1,0,0,0,4,8H20a1,1,0,0,0,0-2H4A1,1,0,0,0,3,7Z" fill="#508ff4"/>
+                </svg>
+                <input type="text" placeholder="Tòa nhà A">
+                <svg id="search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path id="Path_2604" data-name="Path 2604" d="M0,0H24V24H0Z" fill="none"/>
+                    <path id="Path_2605" data-name="Path 2605" d="M15.5,14h-.79l-.28-.27a6.51,6.51,0,1,0-.7.7l.27.28v.79l5,4.99L20.49,19Zm-6,0A4.5,4.5,0,1,1,14,9.5,4.494,4.494,0,0,1,9.5,14Z" fill="rgba(0,0,0,0.38)"/>
+                </svg>
+                <span></span>
+                <svg id="clear" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path id="Path_2857" data-name="Path 2857" d="M0,0H24V24H0Z" fill="none"/>
+                    <path id="Path_2858" data-name="Path 2858" d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z" fill="rgba(0,0,0,0.38)"/>
+                </svg>
+            </div>
+            <div class="image d-flex align-items-center justify-content-center">
+                <svg id="Group_4175" data-name="Group 4175" xmlns="http://www.w3.org/2000/svg" width="120.884" height="120.884" viewBox="0 0 120.884 120.884">
+                    <path id="Path_3060" data-name="Path 3060" d="M0,0H120.884V120.884H0Z" fill="none"/>
+                    <path id="Path_3061" data-name="Path 3061" d="M92.663,13.074H12.074V83.589l46.8-46.812a5.037,5.037,0,0,1,7.122,0L92.663,63.492ZM2,8A5.037,5.037,0,0,1,7,3H97.74a5,5,0,0,1,5,5v80.66a5.037,5.037,0,0,1-5,5H7a5,5,0,0,1-5-5ZM32.221,43.295A10.074,10.074,0,1,1,42.295,33.221,10.074,10.074,0,0,1,32.221,43.295Z" transform="translate(8.074 12.11)" fill="#dcdcdc"/>
+                </svg>                  
+            </div>
+            <div class="location">
+                <div class="location-header">
+                    <h1>Tòa nhà A</h1>
+                    <p>Địa điểm</p>
+                </div>
+                <div class="location-menu d-flex  justify-content-around">
+                    <div class="directions d-flex flex-column align-items-center">
+                      <svg id="directions-24px" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path id="Path_2600" data-name="Path 2600" d="M0,0H18V18H0Z" fill="none"/>
+                        <path id="Path_2601" data-name="Path 2601" d="M16.721,8.937,10,2.216a.744.744,0,0,0-1.053,0L2.226,8.937a.744.744,0,0,0,0,1.053l6.721,6.721a.744.744,0,0,0,1.053,0L16.721,9.99a.744.744,0,0,0,0-1.053Zm-5.758,2.4V9.467H7.976v2.24H6.483V8.72a.749.749,0,0,1,.747-.747h3.734V6.107L13.577,8.72Z" transform="translate(-0.47 -0.467)" fill="#fff"/>
+                      </svg>                      
+                        <p>Chỉ đường</p>                  
+                    </div>
+                    <div class="QR-place d-flex flex-column align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                            <defs>
+                              <clipPath id="clip-path">
+                                <rect id="Rectangle_2345" data-name="Rectangle 2345" width="18" height="18" transform="translate(244 409)" fill="#fff" stroke="#707070" stroke-width="1"/>
+                              </clipPath>
+                            </defs>
+                            <g id="Mask_Group_68" data-name="Mask Group 68" transform="translate(-244 -409)" clip-path="url(#clip-path)">
+                              <g id="qr-code" transform="translate(245.722 410.722)">
+                                <path id="Path_2509" data-name="Path 2509" d="M370.816,0H368.46a.46.46,0,0,0,0,.92h2.356a.4.4,0,0,1,.4.4V3.678a.46.46,0,0,0,.92,0V1.322A1.323,1.323,0,0,0,370.816,0Z" transform="translate(-357.425)" fill="#508ff4"/>
+                                <path id="Path_2510" data-name="Path 2510" d="M.46,4.138a.46.46,0,0,0,.46-.46V1.322a.4.4,0,0,1,.4-.4H3.678a.46.46,0,0,0,0-.92H1.322A1.323,1.323,0,0,0,0,1.322V3.678A.46.46,0,0,0,.46,4.138Z" fill="#508ff4"/>
+                                <path id="Path_2511" data-name="Path 2511" d="M3.678,371.218H1.322a.4.4,0,0,1-.4-.4V368.46a.46.46,0,0,0-.92,0v2.356a1.323,1.323,0,0,0,1.322,1.322H3.678a.46.46,0,0,0,0-.92Z" transform="translate(0 -357.425)" fill="#508ff4"/>
+                                <path id="Path_2512" data-name="Path 2512" d="M371.678,368a.46.46,0,0,0-.46.46v2.356a.4.4,0,0,1-.4.4H368.46a.46.46,0,0,0,0,.92h2.356a1.323,1.323,0,0,0,1.322-1.322V368.46A.46.46,0,0,0,371.678,368Z" transform="translate(-357.425 -357.425)" fill="#508ff4"/>
+                                <path id="Path_2513" data-name="Path 2513" d="M276.31,277.057a.748.748,0,0,0,.747-.747v-1.264a.748.748,0,0,0-.747-.747h-1.092v-1.552a.748.748,0,0,0-.747-.747h-1.724a.748.748,0,0,0-.747.747v1.724a.748.748,0,0,0,.747.747H274.3v1.092a.748.748,0,0,0,.747.747Zm-.316-.919h-.632a.144.144,0,0,1-.144-.144v-.632a.144.144,0,0,1,.144-.144h.632a.144.144,0,0,1,.144.144v.632A.144.144,0,0,1,275.994,276.138Z" transform="translate(-264.184 -264.184)" fill="#508ff4"/>
+                                <path id="Path_2514" data-name="Path 2514" d="M67.736,64H65.322A1.323,1.323,0,0,0,64,65.322v2.414a1.323,1.323,0,0,0,1.322,1.322h2.414a1.323,1.323,0,0,0,1.322-1.322V65.322A1.323,1.323,0,0,0,67.736,64Zm-.517,2.759a.46.46,0,0,1-.46.46H66.3a.46.46,0,0,1-.46-.46V66.3a.46.46,0,0,1,.46-.46h.46a.46.46,0,0,1,.46.46Z" transform="translate(-62.161 -62.161)" fill="#508ff4"/>
+                                <path id="Path_2515" data-name="Path 2515" d="M275.736,64h-2.414A1.323,1.323,0,0,0,272,65.322v2.414a1.323,1.323,0,0,0,1.322,1.322h2.414a1.323,1.323,0,0,0,1.322-1.322V65.322A1.323,1.323,0,0,0,275.736,64Zm-.517,2.759a.46.46,0,0,1-.46.46h-.46a.46.46,0,0,1-.46-.46V66.3a.46.46,0,0,1,.46-.46h.46a.46.46,0,0,1,.46.46Z" transform="translate(-264.184 -62.161)" fill="#508ff4"/>
+                                <path id="Path_2516" data-name="Path 2516" d="M67.736,272H65.322A1.323,1.323,0,0,0,64,273.322v2.414a1.323,1.323,0,0,0,1.322,1.322h2.414a1.323,1.323,0,0,0,1.322-1.322v-2.414A1.323,1.323,0,0,0,67.736,272Zm-.517,2.759a.46.46,0,0,1-.46.46H66.3a.46.46,0,0,1-.46-.46v-.46a.46.46,0,0,1,.46-.46h.46a.46.46,0,0,1,.46.46Z" transform="translate(-62.161 -264.184)" fill="#508ff4"/>
+                              </g>
+                            </g>
+                        </svg>        
+                        <p>Mã địa chỉ</p>                  
+                    </div>
+                    <div class="sharing d-flex flex-column align-items-center">
+                        <svg id="share-24px" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path id="Path_2628" data-name="Path 2628" d="M0,0H18V18H0Z" fill="none"/>
+                            <path id="Path_2629" data-name="Path 2629" d="M14.222,12.544a2.177,2.177,0,0,0-1.466.577L7.421,10.013a2.454,2.454,0,0,0,.067-.524,2.454,2.454,0,0,0-.067-.524L12.7,5.887a2.242,2.242,0,1,0-.718-1.64,2.454,2.454,0,0,0,.067.524L6.771,7.849a2.247,2.247,0,1,0,0,3.28L12.1,14.244a2.115,2.115,0,0,0-.06.487,2.185,2.185,0,1,0,2.185-2.187Zm0-9.046a.749.749,0,1,1-.748.749A.751.751,0,0,1,14.222,3.5Zm-8.978,6.74a.749.749,0,1,1,.748-.749A.751.751,0,0,1,5.244,10.237Zm8.978,5.257a.749.749,0,1,1,.748-.749A.751.751,0,0,1,14.222,15.494Z" transform="translate(-0.733 -0.489)" fill="#508ff4"/>
+                        </svg>
+                        <p>Chia sẻ</p>                          
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="address d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19.522" height="19.522" viewBox="0 0 14.14 19.522">
+                        <g id="maps-and-flags" transform="translate(-70.573)">
+                          <g id="Group_4066" data-name="Group 4066" transform="translate(70.573)">
+                            <path id="Path_2926" data-name="Path 2926" d="M77.643,0a7.078,7.078,0,0,0-7.07,7.07c0,4.838,6.327,11.941,6.6,12.241a.637.637,0,0,0,.947,0c.269-.3,6.6-7.4,6.6-12.241A7.078,7.078,0,0,0,77.643,0Zm0,10.627A3.557,3.557,0,1,1,81.2,7.07,3.561,3.561,0,0,1,77.643,10.627Z" transform="translate(-70.573 0)" fill="#508ff4"/>
+                          </g>
+                        </g>
+                      </svg>                      
+                      <p>63 Phan Đăng Lưu, Phường Thạch Thang, Quận Hải Châu, Thành phố Đà Nẵng</p>
+                    </div>
+                    <div class="start-time d-flex align-items-center">
+                      <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path id="Path_2927" data-name="Path 2927" d="M9,0a9,9,0,1,0,9,9A9.01,9.01,0,0,0,9,0Z" fill="#508ff4"/>
+                        <path id="Path_2928" data-name="Path 2928" d="M208.921,83.118h-1.127v5.868l3.546,3.546.8-.8-3.216-3.216Z" transform="translate(-199.361 -79.749)" fill="#fff"/>
+                      </svg>                      
+                        <p><b>Ngày bắt đầu: </b> 24/11/2000</p>  
+                    </div>
+                    <div class="end-time d-flex align-items-center">
+                      <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path id="Path_2927" data-name="Path 2927" d="M9,0a9,9,0,1,0,9,9A9.01,9.01,0,0,0,9,0Z" fill="#508ff4"/>
+                        <path id="Path_2928" data-name="Path 2928" d="M208.921,83.118h-1.127v5.868l3.546,3.546.8-.8-3.216-3.216Z" transform="translate(-199.361 -79.749)" fill="#fff"/>
+                      </svg>                      
+                        <p><b>Ngày kết thúc: </b>29/11/2099</p>  
+                    </div>
+                    <div class="suggest-edit d-flex align-items-center justify-content-center">
+                        <svg id="edit-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Path_2924" data-name="Path 2924" d="M0,0H24V24H0Z" fill="none"/>
+                            <path id="Path_2925" data-name="Path 2925" d="M3,17.25V21H6.75L17.81,9.94,14.06,6.19ZM20.71,7.04a1,1,0,0,0,0-1.41L18.37,3.29a1,1,0,0,0-1.41,0L15.13,5.12l3.75,3.75,1.83-1.83Z" fill="#508ff4"/>
+                          </svg>
+                        <p>Đề xuất chỉnh sửa</p> 
+                    </div>
+                </div>
+                <div class="location-suggest">
+                    <div class="location-suggest-desc d-flex justify-content-between flex-1">
+                        <div class="img-location-suggest d-flex align-items-center justify-content-center">
+                          <svg id="Group_4176" data-name="Group 4176" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Path_3060" data-name="Path 3060" d="M0,0H24V24H0Z" fill="none"/>
+                            <path id="Path_3061" data-name="Path 3061" d="M20.906,5.168H4.1V20.342l9.76-10.074a1.027,1.027,0,0,1,1.485,0l5.56,5.749ZM2,4.076A1.068,1.068,0,0,1,3.042,3H21.965a1.06,1.06,0,0,1,1.042,1.076V21.434a1.068,1.068,0,0,1-1.042,1.076H3.042A1.06,1.06,0,0,1,2,21.434Zm6.3,7.595A2.169,2.169,0,1,1,10.4,9.5,2.135,2.135,0,0,1,8.3,11.671Z" transform="translate(-0.503 -0.755)" fill="#dcdcdc"/>
+                          </svg>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <p><b>Công Ty Cổ Phần Đầu Tư Và Phát Triển Đô Thị Vạn Thịnh Phát</b></p>
+                            <p>Số 63 Lê Thanh Nghị, Phường Hòa Cường Bắc, Quận Hải Châu, Thành phố Đà Nẵng, Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="location-suggest-desc d-flex justify-content-between flex-1">
+                      <div class="img-location-suggest d-flex align-items-center justify-content-center">
+                        <svg id="Group_4176" data-name="Group 4176" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path id="Path_3060" data-name="Path 3060" d="M0,0H24V24H0Z" fill="none"/>
+                          <path id="Path_3061" data-name="Path 3061" d="M20.906,5.168H4.1V20.342l9.76-10.074a1.027,1.027,0,0,1,1.485,0l5.56,5.749ZM2,4.076A1.068,1.068,0,0,1,3.042,3H21.965a1.06,1.06,0,0,1,1.042,1.076V21.434a1.068,1.068,0,0,1-1.042,1.076H3.042A1.06,1.06,0,0,1,2,21.434Zm6.3,7.595A2.169,2.169,0,1,1,10.4,9.5,2.135,2.135,0,0,1,8.3,11.671Z" transform="translate(-0.503 -0.755)" fill="#dcdcdc"/>
+                        </svg>
+                      </div>
+                      <div class="d-flex flex-column">
+                          <p><b>Nam Long Telecom Đà Nẵng</b></p>
+                          <p>Số 63 Lê Thanh Nghị, Phường Hòa Cường Bắc, Quận Hải Châu, Thành phố Đà Nẵng, Việt Nam</p>
+                      </div>
+                    </div>
+                    <div class="location-suggest-desc d-flex justify-content-between flex-1">
+                      <div class="img-location-suggest d-flex align-items-center justify-content-center">
+                        <svg id="Group_4176" data-name="Group 4176" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path id="Path_3060" data-name="Path 3060" d="M0,0H24V24H0Z" fill="none"/>
+                          <path id="Path_3061" data-name="Path 3061" d="M20.906,5.168H4.1V20.342l9.76-10.074a1.027,1.027,0,0,1,1.485,0l5.56,5.749ZM2,4.076A1.068,1.068,0,0,1,3.042,3H21.965a1.06,1.06,0,0,1,1.042,1.076V21.434a1.068,1.068,0,0,1-1.042,1.076H3.042A1.06,1.06,0,0,1,2,21.434Zm6.3,7.595A2.169,2.169,0,1,1,10.4,9.5,2.135,2.135,0,0,1,8.3,11.671Z" transform="translate(-0.503 -0.755)" fill="#dcdcdc"/>
+                        </svg>
+                      </div>
+                      <div class="d-flex flex-column">
+                          <p><b>Công ty A</b></p>
+                          <p>Số 63 Lê Thanh Nghị, Phường Hòa Cường Bắc, Quận Hải Châu, Thành phố Đà Nẵng, Việt Nam</p>
+                      </div>
+                    </div>
+                    <div class="location-suggest-desc d-flex justify-content-between flex-1">
+                      <div class="img-location-suggest d-flex align-items-center justify-content-center">
+                        <svg id="Group_4176" data-name="Group 4176" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path id="Path_3060" data-name="Path 3060" d="M0,0H24V24H0Z" fill="none"/>
+                          <path id="Path_3061" data-name="Path 3061" d="M20.906,5.168H4.1V20.342l9.76-10.074a1.027,1.027,0,0,1,1.485,0l5.56,5.749ZM2,4.076A1.068,1.068,0,0,1,3.042,3H21.965a1.06,1.06,0,0,1,1.042,1.076V21.434a1.068,1.068,0,0,1-1.042,1.076H3.042A1.06,1.06,0,0,1,2,21.434Zm6.3,7.595A2.169,2.169,0,1,1,10.4,9.5,2.135,2.135,0,0,1,8.3,11.671Z" transform="translate(-0.503 -0.755)" fill="#dcdcdc"/>
+                        </svg>
+                      </div>
+                      <div class="d-flex flex-column">
+                          <p><b>Công ty B</b></p>
+                          <p>Số 1234 Lê Thanh Nghị, Phường Hòa Cường Bắc, Quận Hải Châu, Thành phố Đà Nẵng, Việt Nam</p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div id="button" class="button d-flex align-items-center justify-content-center" onclick="btn()">
+          <div id="arrow" class="arrow-left"></div>
+        </div>
+        <div class="popup">
+            <div class="rectangle"></div>
+        </div>
+    </div>
+</body>
+<script>
+    var cursor = document.querySelector(".rectangle");
+    var h = window.screen.height;
+    var w = window.screen.width;
+    document.addEventListener("mousemove", (e) => {
+    var x = e.clientX;
+    var y = e.clientY;
+    cursor.style.left = (x > w/2) ? `${x-150}px` : `${x+150}px`;
+    cursor.style.top = (y > h/2) ? `${y-100}px` : `${y+100}px`;
+  })
+  
+
+  function btn () {
+    var boxContent = document.getElementById("content");
+    var button = document.getElementById("button");
+    var arrow = document.getElementById("arrow");
+    if(!boxContent.classList.contains("hide")){
+      boxContent.classList.add("hide");
+      button.classList.add("inactive");
+      arrow.classList.remove("arrow-left");
+      arrow.classList.add("arrow-right");
+    } else {
+      boxContent.classList.remove("hide");
+      button.classList.remove("inactive");
+      arrow.classList.remove("arrow-right");
+      arrow.classList.add("arrow-left");
+    }
+    console.log(123)
+  }
+  
+</script>
+</html>

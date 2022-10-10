@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    max-width: unset !important;
+    overflow: hidden;
+    position: relative;
+    margin: unset !important; 
+    padding: unset !important;
+    background: #E1E1E1;
+}
+
+.content {
+    width: 420px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    padding: 6px;
+    /* display: none; */
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.hide {
+    transform: translateX(-100%);
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+    left: 0;
+}
+.inactive {
+    transform: translateX(-420px);
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+}
+
+.header {
+    height: 48px;
+    background-color: #FFFFFF;
+    padding: 12px;
+    box-shadow: 0px 0px 2px #00000029;
+    border-radius: 4px;
+}
+.header input {
+    background-color: #FFFFFF;
+    border: unset; 
+    flex: 1;
+    margin-left: 24px;
+}
+.header span {
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid #00000061;
+}
+#search {
+    margin-right: 16px;
+}
+
+#clear {
+    margin: 0 4px 0 16px;
+}
+.image {
+    height: 240px;
+    margin-top: 4px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.button {
+    width: 20px;
+    height: 48px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    box-shadow: 0px 0px 2px #00000029;
+    border-radius: 4px;
+    left: 420px;
+    margin: 6px 0 0 4px;
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: #E1E1E1;
+}
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent; 
+    border-right: 6px solid #00000061; 
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #00000061;
+}
+
+.location-header {
+    padding: 16px 0 0 16px;
+    border: 0.5px solid #E4E4E4;
+}
+.location-header h1 {
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    margin-bottom: 4px;
+}
+.location-header p {
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #0000008A;
+    margin-bottom: 16px;
+}
+.location-menu {
+    padding: 16px 0;
+    border: 0.5px solid #E4E4E4;
+
+}
+.location-menu svg {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid #508FF4;
+}
+.location-menu p {
+    margin: unset;
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #508FF4;
+}
+.directions svg {
+    background-color: #508FF4;
+}
+
+.description {
+    border: 0.5px solid #E4E4E4;
+}
+
+.description p {
+    margin: unset;
+}
+
+.description svg {
+    margin-right: 32px;
+    color: #508FF4;
+}
+
+.address {
+    margin: 16px 0 21px 16px;
+}
+
+.start-time, .end-time {
+    margin: 0 0 29px 16px;
+}
+
+
+.address p{
+    font: normal normal normal 14px/18px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000DD;   
+}
+.start-time p, .end-time p{
+    font: normal normal normal 14px/19px Open Sans;
+    letter-spacing: 0px;
+    color: #141414;
+}
+
+.suggest-edit {
+    padding: 7px 15px;
+    margin: 0 auto 16px;
+    border: 0.5px solid #E4E4E4;
+    border-radius: 18px;
+    width: 174px;
+    height: 36px;
+
+}   
+
+.suggest-edit svg {
+    margin-right: 8px;
+}
+
+.suggest-edit p {
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000DE;
+}
+
+.location-suggest-desc {
+    padding: 16px 8px 16px 18px;
+    border: 0.5px solid #E4E4E4;
+}
+
+.img-location-suggest{
+    padding: 20px;
+    margin-right: 12px;
+    background-color: #F2F2F2;
+    height: 64px;
+}
+.location-suggest-desc p {
+    font: normal normal normal 14px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #000000DE;
+    margin-bottom: 4px;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.rectangle {
+    width: 300px;
+    height: 200px;
+    background-color: #FFFFFF;
+    position: fixed;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: ease .2s;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+}
+
+.popup:hover .rectangle {
+    opacity: 1;
+}
+.content:hover .rectangle {
+    opacity: 0 !important;
+    display: none;
+}
